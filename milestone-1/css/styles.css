@@ -1,0 +1,27 @@
+body{
+    background-color:rgb(232, 220, 169);
+}
+
+#add-task{
+    border: 5px outset black;
+    padding: 5px;
+}
+
+#list{
+    background-color: azure;
+}
+
+#form-container{
+    background-color: beige;
+}
+
+li{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#todo-title{
+    width: fit-content;
+    padding: 2px;
+    border: 5px outset black;
+}
