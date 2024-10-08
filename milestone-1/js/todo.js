@@ -58,6 +58,8 @@ function completeTask(name) {
 
         text.textContent = `${tasks[index][0]}, ${priority}, Completed`;
         text.style.textDecoration = "line-through";
+    } else{
+        console.log("Error: did not find");
     }
 } 
 
