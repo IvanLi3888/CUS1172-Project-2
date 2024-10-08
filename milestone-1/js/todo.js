@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // TODO 
 // - make site better graphics
 function removeTask(name) {
-    const index = tasks.find(task => task[0] === name);
+    const index = tasks.findIndex(task => task[0] === name);
     if (index !== -1) {
         tasks.splice(index, 1);
         console.log("After delete: "+tasks);
@@ -116,8 +116,8 @@ function addTodoList(array) {
     list.appendChild(li);
 
     remove.addEventListener('click', function () {
-        list.removeChild(li);
-        removeTask(array[0]);
+        list.removeChild(li); // removes from view
+        removeTask(array[0]); // removes from array
         console.log(tasks);
     })
 
