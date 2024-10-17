@@ -98,6 +98,10 @@ function addTodoList(array) {
     text.textContent = array[0] + ", " + priority + ", " + status;
     li.className = "list-group-item";
 
+    if(array[2] == "completed"){
+        text.style.textDecoration = "line-through";
+    }
+
     li.appendChild(text);
 
     var br = document.createElement("br");
